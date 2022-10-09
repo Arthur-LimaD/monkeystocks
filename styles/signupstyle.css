@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans serif;
+}
+* {
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.left-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.form-content{
+    color: white;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: rgb(42, 53, 92);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-form form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inputs{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.inputs input{
+    outline: none;
+    border: none;
+    background-color: rgb(240, 246, 255);
+    border-radius: 4%;
+    height: 30px;
+    margin: 3px 0px 0px 5px;
+    width: 100%;
+}
+.inputs input::placeholder{
+    position: relative;
+    left: 10px;
+}
+.inputs input:focus::placeholder{
+    color: rgb(240, 246, 255)
+}
+.left-form form button{
+    border: none;
+    height: 6vh;
+    font-weight: 700;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #A8FF78, #78FFD6)
+}
+.left-form form button:hover{
+    cursor: pointer;
+}
+.right-form{
+    color: rgb(9 13 157);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.right-content{
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    height: 70%;
+}
+.right-content h1 a{
+    text-decoration: none;
+}
+.right-content img{
+    width: 80%;
+    height: 80%;
+}
+@media (max-width: 1000px){
+    .right-form{
+        display: none;
+    }
+    .left-form{
+        width: 100%;
+        align-items: center;
+    }
+    .form-content{
+        text-align: center;
+        font-size: 0.8em
+    }
+}

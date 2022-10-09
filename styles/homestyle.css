@@ -1,0 +1,97 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: rgb(238, 238, 247)
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans serif;
+}
+.topnav{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    background-color: #292741;
+    font-size: 1em;
+}
+.topnav-title{
+    display: flex;
+    width: 70vw;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #77ffc0;
+}
+.topnav-links{
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.1em;
+}
+.topnav-links a{
+    text-decoration: none;
+    color: whitesmoke
+}
+.topnav-links button{
+    display: flex;
+    height: 50px;
+    width: 170px;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 1.05em;
+    border: none;
+}
+.topnav-links form button:hover{
+    cursor: pointer;
+}
+.graphic{
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+.left-graphic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 100vh;
+}
+.right-graphic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+.stock-gaphic{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stock-selector{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    height: 20%;
+}
+.stock-selector button:hover{
+    cursor: pointer;
+}
+.stock-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
